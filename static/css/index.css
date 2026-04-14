@@ -871,21 +871,6 @@ a:focus {
   background: #eff6ff;
 }
 
-.paper-embed {
-  border-radius: var(--border-radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-xl);
-  border: 1px solid var(--border-color);
-  background: var(--background-primary);
-}
-
-.paper-embed iframe {
-  width: 100%;
-  height: 850px;
-  border: 0;
-  display: block;
-}
-
 @media screen and (max-width: 768px) {
   .publication-note {
     line-height: 1.6;
@@ -894,10 +879,5 @@ a:focus {
   .metric-value {
     font-size: 1.75rem;
   }
-
-  .paper-embed iframe {
-    height: 520px;
-  }
 }
-
 
