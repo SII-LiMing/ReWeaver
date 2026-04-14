@@ -1,34 +1,80 @@
-# CVPR 2026 GitHub Pages Template
+# Academic Project Page Template
 
-This is a lightweight static template for a CVPR 2026 paper page.
+> **Update (September 2025)**: This template has been modernized with better design, SEO, and mobile support. For the original version, see the [original-version branch](https://github.com/eliahuhorwitz/Academic-project-page-template/tree/original-version).
 
-## Files
+A clean, responsive template for academic project pages.
 
-- `index.html`: page structure and placeholder content
-- `styles.css`: visual design and responsive layout
-- `script.js`: tiny debug interactions
 
-## Local debug
+Example project pages built using this template are:
+- https://horwitz.ai/probex
+- https://vision.huji.ac.il/probegen
+- https://horwitz.ai/mother
+- https://horwitz.ai/spectral_detuning
+- https://vision.huji.ac.il/ladeda
+- https://vision.huji.ac.il/dsire
+- https://horwitz.ai/podd
+- https://dreamix-video-editing.github.io
+- https://horwitz.ai/conffusion
+- https://horwitz.ai/3d_ads/
+- https://vision.huji.ac.il/ssrl_ad
+- https://vision.huji.ac.il/deepsim
 
-Open `index.html` in a browser directly, or serve the folder with:
 
-```bash
-python3 -m http.server 8000
-```
 
-Then visit `http://localhost:8000`.
+## Start using the template
+To start using the template click on `Use this Template`.
 
-## Deploy to GitHub Pages
+The template uses html for controlling the content and css for controlling the style. 
+To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
 
-1. Push these files to your repository.
-2. In GitHub, open `Settings` -> `Pages`.
-3. Set the source to deploy from the main branch root.
-4. Save, then wait for the site URL to become available.
+**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
 
-## Replace first
+## What's New
 
-- Paper title
-- Authors and affiliations
-- Button links
-- Teaser figure / video
-- Abstract, method, results, and citation
+- Modern, clean design with better mobile support
+- Improved SEO with proper meta tags and structured data
+- Performance improvements (lazy loading, optimized assets)
+- More Works dropdown
+- Copy button for BibTeX citations
+- Better accessibility
+
+## Components
+
+- Teaser video
+- Image carousel
+- YouTube video embedding
+- Video carousel
+- PDF poster viewer
+- BibTeX citation
+
+## Customization
+
+The HTML file has TODO comments showing what to replace:
+
+- Paper title, authors, institution, conference
+- Links (arXiv, GitHub, etc.)
+- Abstract and descriptions  
+- Videos, images, and PDFs
+- Related works in the dropdown
+- Meta tags for SEO and social sharing
+
+### Meta Tags
+The template includes meta tags for better search engine visibility and social media sharing. These appear in the `<head>` section and help with:
+- Google Scholar indexing
+- Social media previews (Twitter, Facebook, LinkedIn)
+- Search engine optimization
+
+Create a 1200x630px social preview image at `static/images/social_preview.png`.
+
+## Tips
+
+- Compress images with [TinyPNG](https://tinypng.com)
+- Use YouTube for large videos (>10MB)  
+- Replace the favicon in `static/images/`
+- Works with GitHub Pages
+
+## Acknowledgments
+Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
+
+## Website License
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
