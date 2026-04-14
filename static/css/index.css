@@ -153,13 +153,9 @@ body {
 
 .publication-venue {
     color: var(--text-secondary);
-    width: fit-content;
     font-weight: 600;
-    background: var(--background-accent);
-    padding: 0.5rem 1rem;
-    border-radius: var(--border-radius);
     margin-top: 1rem;
-    display: inline-block;
+    display: block;
 }
 
 .publication-awards {
@@ -880,4 +876,3 @@ a:focus {
     font-size: 1.75rem;
   }
 }
-
