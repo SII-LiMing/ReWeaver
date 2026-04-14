@@ -231,73 +231,34 @@
     </section>
 
     <section class="section hero is-light" id="method">
-      <div class="container is-max-desktop">
+      <div class="container is-max-widescreen">
         <h2 class="title is-3 has-text-centered">Method Overview</h2>
         <p class="section-intro has-text-centered">
           ReWeaver predicts garment geometry and topology in 3D first, then recovers flattened 2D sewing patterns from the refined structured representation.
         </p>
 
-        <div class="columns is-vcentered is-variable is-6">
-          <div class="column is-5">
-            <figure class="figure-card">
-              <img src="static/images/terminology.png" alt="Terminology used by ReWeaver for patches panels curves and edges" loading="lazy">
-              <figcaption class="figure-caption">
-                Terminology used in the paper. We call 3D surface regions <strong>patches</strong>, their 2D counterparts <strong>panels</strong>, 3D seam trajectories <strong>curves</strong>, and flattened panel boundaries <strong>edges</strong>.
-              </figcaption>
-            </figure>
-          </div>
-          <div class="column is-7">
-            <figure class="figure-card">
-              <img src="static/images/pipeline.png" alt="Pipeline of the ReWeaver method" loading="lazy">
-              <figcaption class="figure-caption">
-                <strong>Pipeline of ReWeaver.</strong> A multi-view image encoder extracts tokens from RGB inputs, a bi-path transformer predicts 3D curves, 3D patches, and connectivity, and an intra-surface attention module decodes normalized 2D panel edges that are ready for simulation.
-              </figcaption>
-            </figure>
-          </div>
-        </div>
+        <figure class="figure-card figure-card-wide pipeline-card">
+          <img src="static/images/pipeline.png" alt="Pipeline of the ReWeaver method" loading="lazy">
+          <figcaption class="figure-caption">
+            <strong>Pipeline of ReWeaver.</strong> A multi-view image encoder extracts tokens from RGB inputs, a bi-path transformer predicts 3D curves, 3D patches, and connectivity, and an intra-surface attention module decodes normalized 2D panel edges that are ready for simulation.
+          </figcaption>
+        </figure>
       </div>
     </section>
 
     <section class="section" id="results">
-      <div class="container is-max-desktop">
+      <div class="container is-max-widescreen">
         <h2 class="title is-3 has-text-centered">Results</h2>
         <p class="section-intro has-text-centered">
           ReWeaver improves topology accuracy, geometric fidelity, and seam-panel consistency over previous pattern reconstruction baselines.
         </p>
 
         <figure class="figure-card figure-card-wide">
-          <img src="static/images/compare_study.png" alt="Comparison between Ground Truth, ReWeaver, and AIpparel" loading="lazy">
+          <img src="static/images/appendix_results.png" alt="More qualitative ReWeaver results across diverse garment styles" loading="lazy">
           <figcaption class="figure-caption">
-            <strong>Comparison with AIpparel.</strong> ReWeaver produces more accurate 2D panels and correspondingly better simulated garments when compared with the baseline.
+            <strong>More qualitative results.</strong> ReWeaver reconstructs structured garments across diverse styles, including strapless dresses, pencil skirts, and asymmetrical tops, while preserving usable topology and simulation-ready panel layouts.
           </figcaption>
         </figure>
-
-        <div class="columns is-multiline is-variable is-6">
-          <div class="column is-6">
-            <figure class="figure-card">
-              <img src="static/images/point_cloud_compare.png" alt="Adaptive point cloud sampling for ReWeaver patch predictions" loading="lazy">
-              <figcaption class="figure-caption">
-                <strong>Adaptive sampling at inference time.</strong> ReWeaver predicts smooth implicit patch geometry that can be sampled densely and uniformly according to patch scale.
-              </figcaption>
-            </figure>
-          </div>
-          <div class="column is-6">
-            <figure class="figure-card">
-              <img src="static/images/ablation.png" alt="Ablation study of topology and geometry refinement in ReWeaver" loading="lazy">
-              <figcaption class="figure-caption">
-                <strong>Topology and geometry refinement.</strong> Refinement removes redundant curves and enforces closed 2D panel boundaries, leading to cleaner structures suitable for triangulation and simulation.
-              </figcaption>
-            </figure>
-          </div>
-          <div class="column is-12">
-            <figure class="figure-card">
-              <img src="static/images/texture_compare.png" alt="Texture comparison between GCD and GCD-TS" loading="lazy">
-              <figcaption class="figure-caption">
-                <strong>GCD-TS dataset.</strong> Compared with the original GCD textures, GCD-TS replaces unrealistic seam-revealing textures with more realistic and diverse garment and body textures to improve generalization.
-              </figcaption>
-            </figure>
-          </div>
-        </div>
 
         <div class="table-container metrics-table">
           <table class="table is-fullwidth is-striped is-hoverable">
@@ -346,6 +307,33 @@
               </tr>
             </tbody>
           </table>
+        </div>
+
+        <div class="columns is-multiline is-variable is-6 results-followup">
+          <div class="column is-6">
+            <figure class="figure-card">
+              <img src="static/images/point_cloud_compare.png" alt="Adaptive point cloud sampling for ReWeaver patch predictions" loading="lazy">
+              <figcaption class="figure-caption">
+                <strong>Adaptive sampling at inference time.</strong> ReWeaver predicts smooth implicit patch geometry that can be sampled densely and uniformly according to patch scale.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="column is-6">
+            <figure class="figure-card">
+              <img src="static/images/ablation.png" alt="Ablation study of topology and geometry refinement in ReWeaver" loading="lazy">
+              <figcaption class="figure-caption">
+                <strong>Topology and geometry refinement.</strong> Refinement removes redundant curves and enforces closed 2D panel boundaries, leading to cleaner structures suitable for triangulation and simulation.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="column is-12">
+            <figure class="figure-card">
+              <img src="static/images/texture_compare.png" alt="Texture comparison between GCD and GCD-TS" loading="lazy">
+              <figcaption class="figure-caption">
+                <strong>GCD-TS dataset.</strong> Compared with the original GCD textures, GCD-TS replaces unrealistic seam-revealing textures with more realistic and diverse garment and body textures to improve generalization.
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </section>

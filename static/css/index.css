@@ -839,6 +839,10 @@ a:focus {
   margin-bottom: 2rem;
 }
 
+.pipeline-card img {
+  width: 100%;
+}
+
 .figure-caption {
   margin-top: 0.9rem;
   color: var(--text-secondary);
@@ -865,6 +869,10 @@ a:focus {
 
 .metrics-table .reweaver-row {
   background: #eff6ff;
+}
+
+.results-followup {
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 768px) {
